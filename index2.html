@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;margin: 0;box-sizing: border-box;font-family: sans-serif;
+            text-decoration: none;
+        }
+        .container{
+            width: 100%;height: 100vh;
+        }
+        .container>div{
+            width: 100%;
+            height: 100vh;
+            border: 1px solid #ddd;
+            display: flex;justify-content: center;align-items: center;
+            color: #fff;
+            font-size: 2rem;
+            text-transform: uppercase;position: absolute;
+        }
+        .a{
+            background:dodgerblue;
+            clip-path: rect(100 , 200);
+        }
+        .b{
+            background: orangered;
+            clip-path: inset(0 0 calc(100% / 2) calc(100% / 2));
+        }
+        .c{
+            background: orange;
+            clip-path: inset(calc(100% / 2) calc(100% / 2) 0px 0px);   
+        }
+        .d{
+            background: olivedrab;
+            clip-path: inset(calc(100% / 2) 0 0 calc(100% / 2));
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="a">Masome mahmodi</div>
+        <div class="b">Masome mahmodi</div>
+        <div class="c">Masome mahmodi</div>
+        <div class="d">Masome mahmodi</div>
+    </div>
+
+
+    <script src="js/script2.js"></script>
+</body>
+</html>

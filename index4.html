@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;margin: 0;box-sizing: border-box;
+        }
+        body{
+            overflow: hidden;
+        }
+        .container{
+            background: #1f1e1e;
+            width: 100%;height: 100vh;
+        }
+        button{
+            outline: none;background: none;
+            color: #fff;border: 2px solid #fff;
+            padding: 0.5rem 1.5rem;font-size: 1.2rem;
+        }
+        .change{
+            width: 300px; height: 150px;
+           display: flex;justify-content: center;align-items: center;
+            position: absolute;left: 50%;top: 50%;transform: translate(-50%,-50%);transition: 0.02s linear;
+        }
+        .crosur{
+            width: 15px;height: 15px;position: absolute;
+            transform: translate(-50%,-50%);
+            border: 1px solid #fff;border-radius: 50%;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="crosur"></div>
+    <div class="container">
+        <div class="change">
+            <button>Click Me!</button>
+        </div>
+    </div>
+   <script src="js/script4.js"></script>
+</body>
+</html>

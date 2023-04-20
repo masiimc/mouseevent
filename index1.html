@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            height: 100vh;
+            background: #2c2c2c;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+        }
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.5rem 10rem;
+            list-style-type: none;
+            width: 100%;
+        }
+
+        a {
+            text-decoration: none;
+            display: flex;
+            color: #fff;
+            font-size: 2.5em;
+            text-transform: uppercase;
+            z-index: 10;
+            transition: transform 0.3s ease;
+            font-family: sans-serif;
+        }
+
+        a>span {
+            display: inline-block;
+            transform: 0.1s linear;
+        }
+
+        .mouseLG {
+            width: 50px;
+            height: 50px;
+            background: #fefdfd;
+            mix-blend-mode: difference;
+            border-radius: 50%;
+            position: fixed;
+            transition: 0.2s;
+            transform: translate(-50%, -50%);
+            z-index: 99;
+        }
+
+        .mouseSM {
+            width: 10px;
+            height: 10px;
+            background: #f8f7f7;
+            mix-blend-mode: difference;
+            border-radius: 50%;
+            position: fixed;
+            transform: translate(-50%, -50%);
+            z-index: 999;
+        }
+
+        .hover {
+            transform: translate(-50%, -50%) scale(2.5);
+            animation: liquid 2.5s linear infinite;
+        }
+
+        @keyframes liquid {
+
+            0%,
+            100% {
+                border-radius: 28% 72% 46% 54% / 22% 50% 50% 78%;
+            }
+
+            25% {
+                border-radius: 73% 27% 41% 59% / 49% 20% 80% 51%;
+            }
+
+            50% {
+                border-radius: 47% 53% 28% 72% / 49% 76% 24% 51%;
+            }
+
+            75% {
+                border-radius: 48% 52% 68% 32% / 78% 54% 46% 22%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <ul>
+        <li><a href="#"><span>Home</span> </a></li>
+        <li><a href="#"><span>Concat</span></a></li>
+        <li><a href="#"><span>Menu</span> </a></li>
+    </ul>
+
+    <div class="mouseLG"></div>
+    <div class="mouseSM"></div>
+    <script src="js/script1.js"></script>
+</body>
+
+</html>
